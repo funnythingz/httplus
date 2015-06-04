@@ -6,7 +6,13 @@ http extension for golang
 
 ### Delete
 
-`Delete(url string) (*http.Response, error)`
+reference
+
+```go
+Delete(url string) (*http.Response, error)
+```
+
+example
 
 ```go
 resp, err := httplus.Delete("http://api.tekito/images/1")
@@ -14,7 +20,16 @@ resp, err := httplus.Delete("http://api.tekito/images/1")
 
 ### PostFormWithFile
 
-`PostFormWithFile(targetUrl string, valueParams map[string]string, keyName string, filename string) (*http.Response, error)`
+reference
+
+```go
+PostFormWithFile(targetUrl string,
+                 valueParams map[string]string,
+                 keyName string,
+                 filename string) (*http.Response, error)
+```
+
+example
 
 ```go
 params := map[string]string{
