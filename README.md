@@ -38,5 +38,3 @@ params := map[string]string{
 }
 resp, err := httplus.PostFormWithFile("http://api.tekito/images", params, "file", "./tmp/sample.jpg")
 ```
-
-&copy; funnythingz
