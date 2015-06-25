@@ -2,7 +2,6 @@ package httplus
 
 import (
 	"net/http"
-	"os"
 )
 
 func (h *Http) PutFormWithFile(targetUrl string, valueParams map[string]string, keyName string, filename string) (*http.Response, error) {
