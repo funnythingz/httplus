@@ -1,10 +1,6 @@
 package httplus
 
 import (
-	"bytes"
-	"io"
-	"log"
-	"mime/multipart"
 	"net/http"
 	"os"
 )

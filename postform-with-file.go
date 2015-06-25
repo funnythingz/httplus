@@ -1,12 +1,7 @@
 package httplus
 
 import (
-	"bytes"
-	"io"
-	"log"
-	"mime/multipart"
 	"net/http"
-	"os"
 )
 
 func (h *Http) PostFormWithFile(targetUrl string, valueParams map[string]string, keyName string, filename string) (*http.Response, error) {
