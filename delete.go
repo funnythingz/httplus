@@ -4,7 +4,7 @@ import (
 	"net/http"
 )
 
-func (h *Http) Delete(url string) (*http.Response, error) {
+func Delete(url string) (*http.Response, error) {
 	req, err := http.NewRequest("DELETE", url, nil)
 	if err != nil {
 		return nil, err

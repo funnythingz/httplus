@@ -9,7 +9,7 @@ import (
 	"os"
 )
 
-func (h *Http) CreateContentTypeAndBody(valueParams map[string]string, keyName string, filename string) (string, *bytes.Buffer, error) {
+func CreateContentTypeAndBody(valueParams map[string]string, keyName string, filename string) (string, *bytes.Buffer, error) {
 	bodyBuf := &bytes.Buffer{}
 	bodyWriter := multipart.NewWriter(bodyBuf)
 
